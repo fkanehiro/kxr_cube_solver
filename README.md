@@ -3,10 +3,13 @@
 
 # KXRの改造
 ## グリッパ取付角度の変更
+グリッパの取付を90度変更します。
 ## グリッパ先端形状の変更
+[ダイソーのすべり止めシート](https://jp.daisonet.com/collections/living0223/products/4940921833423)を指先のサイズに合わせてカットし、両面テープで貼り付けます。
 # ルービックキューブ
+一辺が56mmの3x3ルービックキューブを用います。軽い力で回転させることが可能な[MonsterGo社のMG3x3](https://www.amazon.co.jp/gp/product/B0B67PYMHB/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&th=1)を使用しました。色認識もこのルービックキューブに合わせて調整しています。
 # インストール
-JSK環境がインストールされたubuntu20.04LTSが前提です。
+JSK環境がインストールされたDebian10が前提です。
 ```
 $ pip3 install kociemba
 $ cd <catkin workspace>/src
@@ -15,6 +18,7 @@ $ cd ..
 $ catkin build
 ```
 # 初期設定
+euslisp/cubeSolver.lのinit-pose関数でしている関節の角度を調整します。
 # 実行方法
 ```
 terminal1$ roslaunch
@@ -26,6 +30,9 @@ terminal2$ roslaunch
 ## キー操作
 画像処理結果を表示しているウィンドウの上でキーを押すことで以下の操作ができます。
 - a 状態遷移の自動・手動をトグルで切り替えます。
+- n 状態遷移が手動になっている際に次の状態に遷移させます。
+- e ルービックキューブを見る動作または解く動作を中断し、init-pose姿勢に戻ります。ルービックキューブの把持状態がずれてしまった場合などに用います。
+- x neutral姿勢に移行し、サーボをOFFにします。
 # 参考
 - https://github.com/muodov/kociemba
 - https://github.com/kkoomen/qbr
