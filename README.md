@@ -10,6 +10,7 @@
 <img src="./images/neutral.jpg" height=400px>
 
 ## グリッパ先端形状の変更
+[こちら](https://www.tinkercad.com/things/biUti9bAgkf-kxr-fingertip?sharecode=K93nFpG1A8HCsEcW_OjZFT_ij9SFqgD5Zj6hoSePQXw)の形状を3Dプリンタなどで出力し、指先に取り付けます。
 <img src="./images/gripper2.jpg" height=400px>
 
 [ダイソーのすべり止めシート](https://jp.daisonet.com/collections/living0223/products/4940921833423)を指先のサイズに合わせてカットし、両面テープで貼り付けます。
