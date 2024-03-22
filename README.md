@@ -1,5 +1,6 @@
 
 2024年3月20日に行われた東京大学稲葉雅幸教授の最終講義第1部としておこなわれたJSK OB・OG会用に作成した、KXRでルービックキューブを解くプログラムです。
+[!['altテキスト'](https://github.com/fkanehiro/kxr_cube_solver/assets/845257/afad05b2-a767-409a-a879-5e31ad2c2718)](https://youtu.be/CVYYmKJGDNQ)
 
 # KXRの改造
 ## グリッパ取付角度の変更
