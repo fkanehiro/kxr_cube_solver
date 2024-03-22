@@ -35,7 +35,7 @@ $ catkin build
 terminal1$ roslaunch realsense2_camera rs_camera.launch color_width:=848 color_height:=480
 terminal2$ roslaunch kxr_cube_solver cubeSolver.launch
 terminal3$ cd ~/rcb4eus
-terminal3$ roseus <catkin_workspace>/src/kxr_cube_solver/euslisp/cubeSolver.l
+terminal3$ roseus <catkin_workspace>/src/kxr_cube_solver/euslisp/cubeSolver.l __name:=roseus_command_server
 ```
 画像処理結果を表示するウィンドウが開き、KXRのサーボがONになり、初期姿勢に移行しながら、「ルービックキューブを手の上においてください」としゃべります。
 
