@@ -36,7 +36,9 @@ $ catkin build
 ターミナルを3つ用意し、それぞれ以下のコマンドを実行します。
 ```
 terminal1$ roslaunch realsense2_camera rs_camera.launch color_width:=848 color_height:=480
+
 terminal2$ roslaunch kxr_cube_solver cubeSolver.launch
+
 terminal3$ cd ~/rcb4eus
 terminal3$ roseus <catkin_workspace>/src/kxr_cube_solver/euslisp/cubeSolver.l __name:=roseus_command_server
 ```
@@ -46,7 +48,7 @@ KXRの個体差を吸収するため、下図のように把持できるよう�
 
 <img src="./images/init-pose1.jpg" height=400px>
 
-また、画像処理結果を表示しているウィンドウの中央付近に表示されている9つの四角がおおよそ各ブロックの位置に来るようにscripts/config.pyの`roi_center_x`, `roi_center_y`を調整します。config.pyを編集した後、ターミナル2のコマンドを再起動することで調整結果が確認できます。
+また、画像処理結果を表示しているウィンドウの中央付近に表示されている9つの四角がおおよそ各ブロックの位置に来るようにscripts/config.pyの`roi_center_x`, `roi_center_y`を調整します。ウィンドウの左下にマウスカーソルの座標が出るので、マウスカーソルを真ん中のブロックの中心に合わせた際の座標をconfig.pyに書き込みます。terminal2のコマンドを再起動することで調整結果が確認できます。
 
 <img src="./images/gui.png" height=400px>
 
