@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import rospy
-from kxr_rubik_test.srv import SendCommand, SendCommandRequest
+from kxr_cube_solver.srv import SendCommand, SendCommandRequest
 from sensor_msgs.msg import Image
 from std_msgs.msg import String
 from cv_bridge import CvBridge, CvBridgeError

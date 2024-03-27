@@ -51,8 +51,8 @@
   (start-command-server)
   )
 
-(ros::roseus-add-srvs "kxr_rubik_test")
+(ros::roseus-add-srvs "kxr_cube_solver")
 (ros::roseus "command_server")
 (ros::rate 10)
-(ros::advertise-service "~send_command" kxr_rubik_test::SendCommand #'command-callback)
+(ros::advertise-service "~send_command" kxr_cube_solver::SendCommand #'command-callback)
 (demo)
