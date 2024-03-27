@@ -1,0 +1,10 @@
+<launch>
+  <!-- default topic is for azure kinect -->
+  <arg name="image_topic_name" default="/camera/color/image_raw"/>
+  
+  <node pkg="kxr_rubik_test" type="cubeSolver.py"
+        name="cubeSolver" output="screen">
+    <remap from="~image_in" to="$(arg image_topic_name)"/>
+  </node>
+  
+</launch>
